@@ -1,0 +1,32 @@
+public class RectangleTest {
+    public static void main(String[] args) {
+        Rectangle r1=new Rectangle(4,40);
+        Rectangle r2=new Rectangle(3.5,35.9);
+      
+         System.out.println("R1 "+r1.width+" "+r1.height+" "+r1.getArea()+" "+r1.getParameter());
+        System.out.println("R2 "+r2.width+" "+r2.height+" "+r2.getArea()+" "+r2.getParameter());
+    
+    }
+}
+
+public class Rectangle {
+    double width,height;
+
+    Rectangle(){
+        width=1;
+        height=1;
+    }
+
+    Rectangle(double width,double height){
+        this.width=width;
+        this.height=height;
+    }
+
+    double getArea(){
+        return width*height;
+    }
+
+    double getParameter(){
+        return 2*(width+height);
+    }
+}
